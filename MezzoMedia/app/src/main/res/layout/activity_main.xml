@@ -1,0 +1,320 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#222222"
+    android:layout_height="match_parent" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+                <LinearLayout
+                    android:id="@+id/versionlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/version"
+                        style="@style/version"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textIsSelectable="true" />
+
+                    <TextView
+                        android:id="@+id/adid"
+                        style="@style/adid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textIsSelectable="true" />
+
+                </LinearLayout>
+            <include layout="@layout/line" />
+            <LinearLayout
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                    <TextView
+                        style="@style/button"
+                        android:background="#222222"
+                        android:layout_gravity="left|center_vertical"
+                        android:gravity="left|center_vertical"
+                        android:layout_weight="2"
+                        android:text="띠배너" />
+                    <Button android:id="@+id/start_banner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:text="start"/>
+                    <Button android:id="@+id/stop_banner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:text="stop"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:background="#333333"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_gravity="center"
+                        android:id="@+id/bannerArea"
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="#555555"
+                        android:orientation="horizontal" >
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <include layout="@layout/line" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/inter1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal" >
+                    <Spinner
+                        android:id="@+id/inlayoutspinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:entries="@array/inlayoutInter" />
+
+                    <Spinner
+                        android:id="@+id/interspinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:entries="@array/interscreen" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:background="#222222"
+                        style="@style/button"
+                        android:layout_gravity="left|center_vertical"
+                        android:gravity="left|center_vertical"
+                        android:layout_weight="2"
+                        android:text="전면배너 " />
+                    <Button android:id="@+id/start_inter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:text="start"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:background="#333333"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:id="@+id/interArea"
+                        android:layout_margin="5dp"
+                        android:layout_width="320dp"
+                        android:layout_height="480dp"
+                        android:background="#555555"
+                        android:orientation="horizontal" >
+                    </RelativeLayout>
+                </LinearLayout>
+                <include layout="@layout/line" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ending1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:background="#222222"
+                        style="@style/button"
+                        android:layout_gravity="left|center_vertical"
+                        android:gravity="left|center_vertical"
+                        android:layout_weight="2"
+                        android:text="종료배너" />
+                    <Button android:id="@+id/start_ending"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:text="start"/>
+                </LinearLayout>
+                <include layout="@layout/line" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/movie1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:background="#222222"
+                        style="@style/button"
+                        android:layout_gravity="left|center_vertical"
+                        android:gravity="left|center_vertical"
+                        android:layout_weight="2"
+                        android:text="영상광고" />
+                    <Button android:id="@+id/start_movie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:text="start"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:background="#333333"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="autoPlay"
+                        android:textSize="9sp"
+                        android:id="@+id/autoPlay"/>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="autoReplay"
+                        android:textSize="9sp"
+                        android:id="@+id/autoReplay"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:background="#333333"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="muted"
+                        android:textSize="9sp"
+                        android:id="@+id/muted"/>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="clickFull"
+                        android:textSize="9sp"
+                        android:id="@+id/clickFullArea"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:background="#333333"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="closeShow"
+                        android:textSize="9sp"
+                        android:id="@+id/closeShow"/>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="soundBtn"
+                        android:textSize="9sp"
+                        android:id="@+id/soundBtnShow"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:background="#333333"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="clickBtn"
+                        android:textSize="9sp"
+                        android:id="@+id/clickBtnShow"/>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="skipBtn"
+                        android:textSize="9sp"
+                        android:id="@+id/skipBtn"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:background="#333333"
+                    android:orientation="horizontal"
+                    android:gravity="left"
+                    android:layout_height="wrap_content">
+                    <Spinner
+                        android:id="@+id/screenmode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:entries="@array/screenmode" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:background="#333333"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:id="@+id/movieArea"
+                        android:layout_margin="5dp"
+                        android:layout_width="200dp"
+                        android:layout_height="355dp"
+                        android:background="#555555"
+                        android:orientation="horizontal" >
+                    </RelativeLayout>
+                </LinearLayout>
+                <include layout="@layout/line" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
