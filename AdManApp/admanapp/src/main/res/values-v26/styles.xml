@@ -1,4 +1,0 @@
-<resources>
-    <style name="interbackground" parent="@android:style/Theme.NoTitleBar.Fullscreen">
-    </style>
-</resources>
