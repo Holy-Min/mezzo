@@ -102,6 +102,7 @@ public class Navimanager {
         int height = (int) MZDisplayUtil.convertPixelsToDp(c, h);
         adData.major("movie", AdConfig.API_MOVIE, p, m, s, "http://www.storeurl.com", c.getPackageName(), appName, width, height);
         adData.minor("0", "40", "mezzo", "geon-jin.mun@cj.net");
+		adData.setUserAgeLevel(0);
         adData.movie(autoPlay, autoReplay, clickFullArea, muted, soundBtnShow, clickBtnShow, skipBtnShow);
         adData.setIsCloseShow(showClose);
         adData.isPermission(AdConfig.NOT_USED, AdConfig.NOT_USED);
@@ -226,6 +227,7 @@ public class Navimanager {
         }
         adData.major("testbanner", AdConfig.API_BANNER, p, m, s, "http://www.storeurl.com", c.getPackageName(), appName, 320, 50);
         adData.minor("0", "40", "mezzo", "geonjin.mun@cj.net");
+		adData.setUserAgeLevel(0);
         adData.isPermission(AdConfig.NOT_USED, AdConfig.NOT_USED);
         bannerView = new AdManView(c);
         bannerView.setData(adData, new AdListener() {
@@ -314,6 +316,7 @@ public class Navimanager {
         }
         adData.major("testInter", AdConfig.API_INTER, p, m, s, "http://www.storeurl.com", c.getPackageName(), appName, 320, 480);
         adData.minor("0", "40", "mezzo", "geonjin.mun@cj.net");
+		adData.setUserAgeLevel(0);
         adData.isPermission(AdConfig.NOT_USED, AdConfig.NOT_USED);
         adData.setIsInLayout(AdConfig.USED);
         inlayoutInter = new AdManView(c);
@@ -402,6 +405,7 @@ public class Navimanager {
         }
         adData.major("testInter", AdConfig.API_INTER, p, m, s, "http://www.storeurl.com", c.getPackageName(), appName, 0, 0);
         adData.minor("0", "40", "mezzo", "geonjin.mun@cj.net");
+		adData.setUserAgeLevel(0);
         adData.isPermission(AdConfig.NOT_USED, AdConfig.NOT_USED);
         adData.setPopup(isPopup);
         adData.setIsInLayout(AdConfig.NOT_USED);
@@ -478,6 +482,7 @@ public class Navimanager {
         int height = (int) MZDisplayUtil.convertPixelsToDp(c, h);
         adData.major("testInter", AdConfig.API_ENDING, p, m, s, "http://www.storeurl.com", c.getPackageName(), appName, width, height);
         adData.minor("0", "40", "mezzo", "geonjin.mun@cj.net");
+		adData.setUserAgeLevel(0);
         adData.isPermission(AdConfig.NOT_USED, AdConfig.NOT_USED);
         adManEnding = new AdManView(c);
         adManEnding.setData(adData, new AdListener() {
