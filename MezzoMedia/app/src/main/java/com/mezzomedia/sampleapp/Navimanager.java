@@ -118,12 +118,9 @@ public class Navimanager {
                         ((Activity) c).runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                if (AdResponseCode.Status.SUCCESS.equals(status)) {
-                                    if(movieView.getParent() != null){
-                                        ((ViewGroup) movieView.getParent()).removeView(movieView);
-                                    }
-                                    bannerArea.addView(movieView);
-                                }
+								if (AdResponseCode.Status.SUCCESS.equals(status)) {
+									movieView.addBannerView(bannerArea);
+								}
                             }
                         });
 
@@ -241,12 +238,9 @@ public class Navimanager {
                         ((Activity) c).runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                if (AdResponseCode.Status.SUCCESS.equals(status)) {
-                                    if(bannerView.getParent() != null){
-                                        ((ViewGroup) bannerView.getParent()).removeView(bannerView);
-                                    }
-                                    bannerArea.addView(bannerView);
-                                }
+								if (AdResponseCode.Status.SUCCESS.equals(status)) {
+									bannerView.addBannerView(bannerArea);
+								}
                             }
                         });
 
@@ -331,12 +325,9 @@ public class Navimanager {
                         ((Activity) c).runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                if (AdResponseCode.Status.SUCCESS.equals(status)) {
-                                    if(inlayoutInter.getParent() != null){
-                                        ((ViewGroup) inlayoutInter.getParent()).removeView(inlayoutInter);
-                                    }
-                                    bannerArea.addView(inlayoutInter);
-                                }
+								if (AdResponseCode.Status.SUCCESS.equals(status)) {
+									inlayoutInter.addBannerView(bannerArea);
+								}
                             }
                         });
 
