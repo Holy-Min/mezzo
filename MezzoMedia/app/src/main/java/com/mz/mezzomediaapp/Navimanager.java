@@ -175,10 +175,7 @@ public class Navimanager {
                 }else if(AdEvent.Type.IMP.equals(type)){
 
                 }else if(AdEvent.Type.SKIP.equals(type)){
-                    if(movieView!=null){
-                        movieView.onDestroy();
-                    }
-                    bannerArea.removeAllViews();
+
                 }else if(AdEvent.Type.START.equals(type)){
 
                 }else if(AdEvent.Type.FIRSTQ.equals(type)){
