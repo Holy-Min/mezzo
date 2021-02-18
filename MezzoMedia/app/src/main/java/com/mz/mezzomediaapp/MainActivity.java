@@ -1,11 +1,11 @@
 package com.mz.mezzomediaapp;
 
-import com.mezzomedia.common.MZUtils;
-import com.mezzomedia.common.MzLog;
-import com.mezzomedia.man.AdConfig;
-import com.mezzomedia.man.adid.AdidClient;
-import com.mezzomedia.man.adid.AdidListener;
-import com.mezzomedia.man.adid.GetAdidTask;
+import com.mmc.common.MZUtils;
+import com.mmc.common.MzLog;
+import com.mmc.man.AdConfig;
+import com.mmc.man.adid.AdidClient;
+import com.mmc.man.adid.AdidListener;
+import com.mmc.man.adid.GetAdidTask;
 
 import android.app.Activity;
 import android.content.Context;

@@ -1,14 +1,14 @@
 package com.mz.mezzomediaapp;
 
-import com.mezzomedia.common.MZDisplayUtil;
-import com.mezzomedia.common.MzLog;
-import com.mezzomedia.man.AdConfig;
-import com.mezzomedia.man.AdEvent;
-import com.mezzomedia.man.AdListener;
-import com.mezzomedia.man.AdResponseCode;
-import com.mezzomedia.man.data.AdData;
-import com.mezzomedia.man.view.AdManPage;
-import com.mezzomedia.man.view.AdManView;
+import com.mmc.common.MZDisplayUtil;
+import com.mmc.common.MzLog;
+import com.mmc.man.AdConfig;
+import com.mmc.man.AdEvent;
+import com.mmc.man.AdListener;
+import com.mmc.man.AdResponseCode;
+import com.mmc.man.data.AdData;
+import com.mmc.man.view.AdManPage;
+import com.mmc.man.view.AdManView;
 
 import android.app.Activity;
 import android.app.AlertDialog;
