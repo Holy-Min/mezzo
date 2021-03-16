@@ -402,6 +402,7 @@ public class Navimanager {
         adData.setPopup(isPopup);
         adData.setIsInLayout(AdConfig.NOT_USED);
         adManInterActivity = new AdManPage(c);
+		adManInterActivity.setAutoFinish(AdConfig.USED);
         adManInterActivity.setData(adData, new AdListener() {
             @Override
             public void onAdSuccessCode(Object v, String id, String type, String status, String jsonDataString) {
