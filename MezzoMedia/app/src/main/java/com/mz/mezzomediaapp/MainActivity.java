@@ -452,9 +452,9 @@ public class MainActivity extends Activity {
         start_ending.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                int pub = 100;
-                int media = 200;
-                int sec = 804313;
+                int pub = 1577;
+                int media = 32155;
+                int sec = 804769;
                 DisplayMetrics dm = getApplicationContext().getResources().getDisplayMetrics();
                 int width = dm.widthPixels;
                 int height = dm.heightPixels;
